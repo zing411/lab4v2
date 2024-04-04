@@ -1,0 +1,38 @@
+
+GET http://localhost:3000/books
+
+
+###
+
+GET http://localhost:3000/books/660dfda3afcac49d026b8467
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "isbn": "Test",
+    "title": "Title test",
+    "pages": 5,
+    "genres": "Fantasy",
+    "ratings": 9,
+    "posted_by": "me"
+}
+
+###
+
+DELETE http://localhost:3000/books/660e01d9a909d123048832e1
+
+###
+
+PATCH http://localhost:3000/books/660dfda3afcac49d026b8467
+Content-Type: application/json
+
+{
+    "isbn": "My new Test",
+    "title": "new test",
+    "pages": 8,
+    "genres": "Sci fi",
+    "ratings": 5,
+    "posted_by": "yes me"
+}

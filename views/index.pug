@@ -1,0 +1,19 @@
+html
+  head
+    title Books
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff; 
+        color: black; 
+      }
+    body
+      h1 Books
+      each book in books
+        h5 ISBN: #{book.isbn}
+        h5 Title: #{book.title}
+        h5 Pages: #{book.pages}
+        h5 Genres: #{book.genres}
+        h5 Ratings: #{book.ratings}
+        h5 Posted By: #{book.posted_by}
+        hr

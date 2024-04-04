@@ -1,0 +1,32 @@
+html
+  head
+    title Edit Book
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff; 
+        color: black; 
+      }
+    body
+      h1 Edit Book
+      form(action=`/books/${book._id}?_method=PATCH` method="POST")
+        label(for="isbn") ISBN
+        input(type="text" name="isbn" value=book.isbn)
+      
+        label(for="title") Title
+        input(type="text" name="title" value=book.title)
+      
+        label(for="pages") Pages
+        input(type="number" name="pages" value=book.pages)
+      
+        label(for="genres") Genres
+        input(type="text" name="genres" value=book.genres)
+      
+        label(for="ratings") Ratings
+        input(type="number" name="ratings" value=book.ratings)
+      
+        label(for="posted_by") Posted By
+        input(type="text" name="posted_by" value=book.posted_by)
+      
+        button(type="submit") Update
+
